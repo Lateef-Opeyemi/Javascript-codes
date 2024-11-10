@@ -109,4 +109,9 @@ let book = {
 };
 
 console.log(book);
+console.log(book.genres[1] = "Games");
+console.log(book ["author"])
+book.author = "Opeyemi";
+console.log(book.genres[3] = "Friction");
+console.log(book);
 
