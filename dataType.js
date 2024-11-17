@@ -88,8 +88,8 @@ let firstName = "John";
 let lastName = "Doe";
 let age1 = 20;
 let isStudent = "true";
-//  console.log("My name is $(firstName) $(lastName), I am $(age1) years old and it is $(isStudent) that I am a student");
-    console.log("My name is " + firstName + "" + lastName + ", I am" + "" + age1 + "years old , and it is" + "" + isStudent + "that I am a student");
+console.log("My name is ${firstName} ${lastName}, I am ${age1} years old and it is ${isStudent} that I am a student");
+console.log("My name is " + firstName + "" + lastName + ", I am" + "" + age1 + "years old , and it is" + "" + isStudent + "that I am a student");
 
 // ASSIGNMENT 3
 
@@ -101,16 +101,16 @@ console.log(favoriteMovies[4]);
 // ASSIGNMENT 4
 
 let book = {
-    title : "The Adventure Of Huckleberry",
+    title: "The Adventure Of Huckleberry",
     author: "Lewis Carroll",
     publishedYear: "1960",
-    genres: [ "Friction", "Drama", "Mystery"],
+    genres: ["Friction", "Drama", "Mystery"],
     isAvailable: true
 };
 
 console.log(book);
 console.log(book.genres[1] = "Games");
-console.log(book ["author"])
+console.log(book["author"])
 book.author = "Opeyemi";
 console.log(book.genres[3] = "Friction");
 console.log(book);
