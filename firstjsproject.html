@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="firstjsproject.css">
+</head>
+
+<body>
+    <form>
+        <div id="maindiv">
+            <div>
+                <label for="salary">MONTHLY SALARY:</label>
+                <input type="number" placeholder="monthly salary" id="salary" required>
+            </div>
+            <div class="">
+                <h1>Expenses:</h1>
+                <input type="text" placeholder="your expense" class="expense">
+                <input type="number" class="amount" placeholder="amount" required>
+                <button type="button" class="removebtn" onclick="remove_fn(this)">Remove</button>
+            </div>
+            <div>
+                <input type="text" placeholder="your expense" class="expense">
+                <input type="number" class="amount" placeholder="amount" required>
+                <button type="button" class="removebtn" onclick="remove_fn(this)">Remove</button>
+            </div>
+        </div>
+        <button type="submit" id="addmore" onclick="extend()">Addmore</button>
+        <button type="submit" id="submitbtn">Submit</button>
+
+        </div>
+    </form>
+    <h2> amount left: <span id="Amount left"></span></h2>
+    <script src="firstjsproject.js"></script>
+</body>
+
+</html>

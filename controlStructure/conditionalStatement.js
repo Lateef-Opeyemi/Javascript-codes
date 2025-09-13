@@ -64,6 +64,21 @@ switch (fruit1) {
     default:
         console.log("we do not have any fruit");
 }
+//nested if
+let x = 7
+if(x==2){
+console.log('x is 2')
+} else if(x == 3){
+ console.log('x is 3')
+}else if(x>5){
+    console.log('x is 5')
+    if(x>6){
+        console.log('x is also > 6')
+    }
+}else{
+    console.log('something else')
+}
+
 
 let age1 = 20;
 switch (age1) {
@@ -90,4 +105,12 @@ switch (true) {
         break;
     default:
         console.log("No valid case found.");
+}
+ let animal = "dog"
+?console.log("you are a dog")
+:console.log("you are not a dog");
+
+// for loop
+for (var i = 0; i <=10; i +=2) {
+    console.log(i);
 }

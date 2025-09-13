@@ -24,6 +24,7 @@ let name2 = "Ayo";
 // Number
 let age2 = 25;
 let myNumber = 4.92;
+console.log("i am " + name2 + " and i am " + age + " ")
 
 // Boolean
 // true or false
@@ -88,8 +89,7 @@ let firstName = "John";
 let lastName = "Doe";
 let age1 = 20;
 let isStudent = "true";
-console.log("My name is ${firstName} ${lastName}, I am ${age1} years old and it is ${isStudent} that I am a student");
-console.log("My name is " + firstName + "" + lastName + ", I am" + "" + age1 + "years old , and it is" + "" + isStudent + "that I am a student");
+console.log("My name is " + firstName + " " + lastName + ", I am" + age1 + " years old , and it is " + isStudent + "that I am a student");
 
 // ASSIGNMENT 3
 
@@ -114,4 +114,79 @@ console.log(book["author"])
 book.author = "Opeyemi";
 console.log(book.genres[3] = "Friction");
 console.log(book);
+//note:keyword must begin with capital letter
+//type conversion
+//string to number var x = "10" Number(x)
+//2.1 to integer : Round(2.1)
+//console.log(math.round(2.1))
+//console.log(math.celi(2.1))
+//console.log(math.floor(2.1))
+/* rules for naming
+camel casing : firstVar
+snake casing: first_var
+*/
+/*
+let all = ['a', 'b', 'c', 'b']
+console.log(all.lastindexof('b'))
+output : 3
+*/
+//shif: to remove element at the front
+// unshift: to add element at the front
+/* let all = [
+[1, 2, 3], ['a', 'b', 'c',]
+]
+ to access 1 from the nested array: console.log(all[0][0])
+*/
+/*let dog = {
+    id: 'dog',
+    speak: function(){
+        console.log('bark')
+    }
+}
+
+let cat = {
+    id: 'cat',
+    speak: function(){
+        console.log('meow')
+    }
+}
+dog.speak() */ //output: bark
+
+//Object constructor
+/*function animal(id, speak){
+this.id = id
+this.speak = speak
+}
+let cow = new animal('cow', 'moo')
+console.log(cow)
+*/
+//argument
+/*function sum(a,b){
+    console.log(a + b)
+}
+sum(2,3)
+*/
+//functions
+/*
+function sum(){
+let a = 1
+let b = 2
+console.log(a + b)
+}
+sum()
+*/
+/* arrow function
+ const sum = () => {
+    let a = 1
+    let b = 2
+    console.log(a+b)
+    }
+    sum()
+    */
+   /* let greet = () => {console.log('hello')} 
+   greet()*/
+   //setTimeout(() => {console.log('hello')}, 3000) execute after 3000ms ~ 3s
+   
+
+
 
