@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <h1>TO-DO LIST</h1>
+    <br>
+    <input type="text" placeholder="name">
+    <input type="date">
+
+    <br><br>
+    <div class="main">
+<div id ="tasklist">
+    <h4 class="tasks">Task List</h4> 
+<input type="checkbox"> <span><input type="text"></span>  <span class="remove" onclick="remove_fn(this)">x</span><br> <br>
+</div>
+<button type="submit" class="add"> Add  more task</button>
+<br>
+<div id ="top">
+    <h4 class="tasks">Top priorities</h4>
+    <input type="checkbox"> <span><input type="text"></span> <span class="remove"onclick="remove_fn(this)">x</span><br> <br>
+</div>
+<button type="button" class="top" > Add  more task</button>
+<br>
+<div id ="reminder">
+    <h4 class="tasks">Reminder</h4>
+    <input type="checkbox"> <span><input type="text"></span> <span class="remove" onclick="remove_fn(this)">x</span><br> <br>
+</div>
+<button type="button" class="re"> Add  more task</button>
+    <div class="note">
+        <h4 class="tasks">Notes</h4>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+</div>
+
+
+    </div>
+  <script src="todolist.js"></script>
+</body>
+</html>

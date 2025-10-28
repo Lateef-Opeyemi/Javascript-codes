@@ -67,26 +67,35 @@
 function calculate() {
 
     let scores = document.getElementsByClassName("score1")
-    console.log(scores)
+
+    // console.log(scores)
     let total = 0;
     //we use array.from to extract array from a datatype diffrent from array since map works only for array
     Array.from(scores).map((each) => {
+
         total = total + Number(each.value)
-        avg = total / scores.length
-        percent = parseFloat(total / (scores.length * 100) * 100);
     })
+    avg = total / scores.length
+
+    percent = parseFloat(total / (scores.length * 100) * 100);
+
     console.log(total)
+
     console.log(avg)
+
     console.log(percent)
+
     document.getElementById("average").innerText = avg
+
     document.getElementById("total").innerText = total
+    
     document.getElementById("percentage").innerText = percent.toFixed(2) + "%"
 
-    if(percent >=0 && percent < 45){
+    if (percent >= 0 && percent < 45) {
         document.getElementById("text").innerText = "fail";
-    }else if(percent >=45 && percent<65){
+    } else if (percent >= 45 && percent < 65) {
         document.getElementById("text").innerText = "good"
-    }else{
+    } else {
         document.getElementById("text").innerText = "verygood"
     }
 }

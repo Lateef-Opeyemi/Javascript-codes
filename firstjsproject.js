@@ -20,10 +20,11 @@ function amount_left(e) {
         total_expenses = total_expenses + Number(each.value)
           
      });
+     let total = total_expenses
+     document.getElementById("total").innerText = total
      let left = salary - total_expenses
 document.getElementById("Amount left").innerText= left
-
-    
+   
 }
 document.getElementById("submitbtn").addEventListener("click", amount_left)
 

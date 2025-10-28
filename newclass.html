@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newclass.css">
+</head>
+
+<body>
+    <form action="" id="itsform">
+        <div class="form-group">
+            <label for="username"> username:</label>
+            <br>
+            <input type="text" id="username" placeholder="username">
+            <br>
+            <p id="user"></p>
+        </div>
+        <div class="form-group">
+            <label for="password"> password:</label>
+            <br>
+            <input type="password" id="password" placeholder="password">
+            <p id="password_warning"></p>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="comfirm password"> confirm password:</label>
+            <br>
+            <input type="password" id="c-password" placeholder="Confirm password" oninput="confirmpassword()">
+            <p id="confirm_warning"></p>
+            <br> <br>
+        </div>
+        <div class="info">
+            <p id="username_info"></p>
+            <p id="password_info"></p>
+            <p id="confirmpassword_info"></p>
+        </div>
+        <button type="submit" id="submit">submit</button>
+    </form>
+<br><br><br>
+
+
+
+
+    
+
+
+</html>
+    
+    <script src="newclass.js"></script>
+</body>
+
+</html>

@@ -40,6 +40,8 @@ car[1].map((each_value)=>{
 })
 
 
+
+
 //map
 //syntax: array.map(each_value, index, array)
 //car.map((x,y,z)=>{

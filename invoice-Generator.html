@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="invoice-Generator.css">
+</head>
+
+<body>
+    <div class="firsthead">
+        <a href="">Invoice-Generator.com</a>
+        <a href="#help">Help</a>
+        <a href="#history">History</a>
+        <a href="#invoice guiding">invoicing Guiding</a>
+        <div class="insidediv">
+            <a href="./invoicesignin.html"><button class="in">Sign in</button></a>
+            <a href="./invoicesignup.html"><button class="up">Sign up</button></a>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>Free Invoice Template</h1>
+        <b>Make beautiful invoice with just ine click!</b>
+        <br>
+        <p>Welcome to the original Invoice-Generator, used by over 4 million businesses. Invoice-Generator lets you
+            instantly make invoices with our attractive invoice template straight from your web browser. The invoice you
+            make can be sent and paid online or downloaded as PDF.</p>
+        <p>Did we also mention that Invoice-Generator lets you generate an unlimited number of invoices</p>
+        <button type="button" class="okbtn" onclick=" remove_fn(this)">Ok, got it!</button>
+    </div>
+    <br>
+    <br><br><br><br>
+    
+    </div>
+    <div class="end">
+        <button class="downloadbtn">Download</button>
+        <br><br><br>
+        <label for="">Theme</label>
+        <br>
+        <select name="" id="" class="conditions">
+            <option value="">Classic</option>
+            <option value="">Slate</option>
+        </select>
+        <br><br>
+        <label for="">Currency</label>
+        <br>
+        <select name="" id="" class="conditions">
+            <option value="USD($)">USD($)</option>
+            <option value="NAIRA()">NAIRA</option>
+            <option value="EURO()">EURO</option>
+            <option value="YUAN">YUAN</option>
+        </select>
+    </div>
+    <br> <br> <br>
+    <div class="mainhead">
+        <button class="logobtn">+ Add your logo</button>
+        <br><br>
+        <input type="text" value="INVOICE" class="itsinvoice">
+        <br><br>
+        <div class="hero_section">
+            <input type="text" placeholder="#" class="section1">
+            <br><br><br>
+            <input type="text" placeholder="who is this from?" class="section">
+          <br><br><br>
+            <label for=""> Bill to</label>  <br> <br>
+            <input type="text" placeholder="who is this to?" class="section">
+    <br><br><br>
+            <label for="">Ship to</label><br> <br>
+            <input type="text" placeholder="(optional)" class="section">
+            </span>
+        <br><br>
+
+        <div class="info">
+            <label for=""> Date
+                <input type="date" class="date">
+            </label>
+            <br><br>
+            <label for=""> payment Terms</label>
+            <input type="text" class="terms">
+            <br><br>
+            <label for=""> Due Date
+                <input type="text" class="due">
+            </label>
+            <br><br>
+            <label for=""> Po Number
+                <input type="number" class="num">
+            </label>
+        </div>
+        <br><br><br>
+
+        <div class="semi">
+            <h5>Quantity</h5>
+            <h5 class="unit">unit</h5>
+            <h5>Amount</h5>
+        </div>
+        <div class = "parentdiv">
+            <fieldset>
+                <input type="text" placeholder="Description of item/service" class="desc">
+                <input type="number" id="num_input" oninput="subtotal(); total()">
+                <input type="number" id="num_amt" placeholder="$" oninput="subtotal(); total()">
+                <span class="cancel" onclick="cancel(this)"> x </span>
+            </fieldset>
+            <br>
+        </div>
+        <br><br>
+        <button type="click" id="addbtn">+ Line item</button>
+
+        <br><br>
+        <div class="no">
+            <b>Notes</b>
+            <input type="text" class="note" placeholder="notes - any relevant information not already covered">
+            <br><br>
+            <b>Terms</b>
+            <input type="text" class="note"
+                placeholder="terms and conditions- late fees, payment methods, delivery schedule">
+        </div>
+        <br> <br> <br>
+        <div class="taxarea">
+ <h4>Subtotal<span class="sub"></span></h4>
+<br> <br>
+
+        </div>
+<div class="discountarea">
+    <span class="tax">+Tax</span>
+    <span class ="discountbtn">+Discount</span>&nbsp;&nbsp;&nbsp;
+     <span class="shipping">+Shipping</span>
+</div>
+<br>
+<div class="taxarea">
+ <h4>Total<span class="subs"></span></h4>
+
+</div> <br><br>
+<div class="taxarea">
+    <label for="">Amount paid</label>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="number" class="amt"  oninput="balancedue()" placeholder="$" value="0">
+</div>
+<br><br><br>
+<div class="taxarea">
+    <h4>Balance Due<span class="balance_due"></span></h4>
+    </div>
+    </div>
+
+    <br><br><br><br>
+
+    </fieldset>
+    <br> <br><br>
+    <div class="resources">
+        <div class="">
+            <h4>Use Invoice Generator</h4>
+            <p>Invoice Template</p>
+            <p>Credit note Template</p>
+            <p>quote Template</p>
+            <p>Purchase Order Template</p>
+        </div>
+
+
+        <div class="">
+            <h4>Resources</h4>
+            <p>Invoicing Guide</p>
+            <p>Help</p>
+            <p>Sign In</p>
+            <P>Sign Up</P>
+            <p>Release Notes</p>
+            <p>Developer API</p>
+        </div>
+        <div class="">
+            <h4>&copy;2012-2025 Invoice-Generator</h4>
+            <p>Terms of service</p>
+            <p>Privacy Policy</p>
+            <p>Cookie Settings</p>
+        </div>
+    </div>
+
+    <p class="save">save Default</p>
+    <script src="invoice-Generator.js"></script>
+</body>
+
+</html>

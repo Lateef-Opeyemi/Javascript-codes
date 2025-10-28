@@ -64,6 +64,7 @@ switch (fruit1) {
     default:
         console.log("we do not have any fruit");
 }
+
 //nested if
 let x = 7
 if(x==2){
